@@ -1263,12 +1263,11 @@ footer#footer .floating-div {
   flex-shrink: 0;
   border-radius: 2px;
   background: var(--Text-Darker, #0F2F64);
-  margin-bottom: -150px;
+  margin-top: -150px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0 115px;
-
+  position: relative;
 }
 
 footer#footer .floating-div .main-content {
@@ -1335,21 +1334,22 @@ footer#footer .floating-div .main-content .buttons-div button.contact-floating-d
 
 footer#footer .floating-div .img{
   position: relative;
-  z-index: 0;
+  width: 100px;
 }
 
 footer#footer .floating-div .img img {
-  width: 100px;
+  width: 80%;
   position: absolute;
-  top: -40px;
   right: 0;
+  bottom: -50px;
 }
 
 footer#footer .floating-div .img img#img-1{
-  width: 70px;
+  width: 50%;
   position: absolute;
-  top: -75px;
-  left: 0px;
+  left: 0;
+  bottom: -50px;
+  
 }
 
 footer#footer .copyright {
@@ -1556,7 +1556,6 @@ section#key-industry .card-section .card p {
 
 section#key-industry .card-section .card {
   padding: 24px;
-  max-width: 200px;
 }
 
 
@@ -1820,7 +1819,7 @@ header#header .header-nav .mb-logo, header#header .header-nav .hambuger{
   }
 
   section#hero .hero-content .hero-slide {
-    width: 372px;
+    width: 100%;
     position: relative;
   }
 
@@ -1873,6 +1872,7 @@ header#header .header-nav .mb-logo, header#header .header-nav .hambuger{
 
   section#our-services .service-heading h2 {
     font-size: 28px;
+    width: 100%;
   }
 
   section#our-services .service-card-flex {
@@ -1895,6 +1895,7 @@ header#header .header-nav .mb-logo, header#header .header-nav .hambuger{
   section#key-industry {
     padding: 24px;
     flex-direction: column;
+    max-width: 327px;
   }
 
   section#key-industry .card-section {
@@ -1905,6 +1906,7 @@ header#header .header-nav .mb-logo, header#header .header-nav .hambuger{
   section#key-industry h2 {
     margin-bottom: 40px;
     padding-top: 40px;
+    width: 100%;
   }
 
   /* expertise */
@@ -1935,11 +1937,12 @@ header#header .header-nav .mb-logo, header#header .header-nav .hambuger{
 
   section#geodata {
     display: block;
+    padding: 0 24px;
   }
 
   section#geodata .right-div,  section#geodata .left-div{
     margin: 0;
-    padding: 24px;
+    padding: 24px 0;
   }
 
   section#geodata .left-div .card-wrapper {
@@ -1952,19 +1955,18 @@ header#header .header-nav .mb-logo, header#header .header-nav .hambuger{
   }
 
   section#geodata button {
-    margin-left: 24px;
     width: 100%;
   }
 
   /* INSIGHTS */
 
   section#insights {
-    max-width: 374px;
+
     padding-left: 24px;
     background: var(--Base-White);
     padding: 0;
     padding-bottom: 56px;
-    width: 375px;
+    align-items: center;
   }
 
   section#insights .left-section .top .text-heading h2{
@@ -2005,4 +2007,57 @@ header#header .header-nav .mb-logo, header#header .header-nav .hambuger{
   section#insights .right-section .img-div img {
     width: 100%;
   }
+
+
+  /* FOOTER */
+
+  footer#footer {
+    width: 100%;
+    margin: 0;
+    background: var(--Base-White);
+  }
+
+  footer#footer .footer-wrapper {
+    align-items: flex-start;
+    background-color: #041126;
+    width: 100%;
+    padding: 24px;
+  }
+
+  footer#footer .footer-wrapper .main-content, footer#footer .footer-wrapper .main-content .logo-side{
+    align-items: flex-start;
+    gap: 24px;
+  }
+
+  footer#footer .floating-div{
+    width: 100%;
+    position: relative;
+  }
+
+  footer#footer .footer-wrapper .main-content {
+    padding: 24px;
+    z-index: 10;
+  }
+
+  footer#footer .copyright {
+    width: 100%;
+    display: flex;
+
+    justify-content: center;
+  }
+
+  footer#footer .floating-div .main-content .buttons-div button.contact-floating-div, footer#footer .floating-div .main-content .buttons-div button {
+    width: 100%;
+  }
+
+  
+  footer#footer .floating-div .img img#img-1 {
+    top: -230px;
+    width: 80%;
+  }
+
+  footer#footer .floating-div .img {
+    bottom: -80px;
+  }
+ 
 }
