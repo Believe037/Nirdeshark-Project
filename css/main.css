@@ -1760,14 +1760,13 @@ header#header .header-nav .mb-logo, header#header .header-nav .hambuger{
 
   body {
     overflow-x: hidden;
+    width: 100%;
   }
 
-  body {
-    max-width: 400px;
-  }
+ 
 
   header#header {
-    width: 375px;
+    width: 100%;
     background: red;
     margin: 0;
     padding: 0;
