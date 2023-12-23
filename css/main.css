@@ -1781,7 +1781,7 @@ header#header .header-nav .mb-logo, header#header .header-nav .hambuger{
 
   .dropdown {
     top: 50px;
-    right: 105px;
+    right: 5%;
     z-index: 100;
   }
 
