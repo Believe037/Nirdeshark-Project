@@ -1757,6 +1757,10 @@ header#header .header-nav .mb-logo, header#header .header-nav .hambuger{
 
  @media  (max-width: 775px) {
 
+  body {
+    max-width: 400px;
+  }
+
   header#header {
     width: 375px;
     background: red;
