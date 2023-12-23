@@ -1448,8 +1448,7 @@ footer#footer .footer-wrapper .main-content .logo-side .tel-email p{
   gap: 16px;
   border-radius: 5px;
   position: absolute;
-  right: 0;
-  width: 63%;
+  width: 76%;
 
   display: none;
 }
@@ -1780,7 +1779,7 @@ header#header .header-nav .mb-logo, header#header .header-nav .hambuger{
   }
 
   .dropdown {
-    top: 50px;
+    top: 60px;
     right: 5%;
     z-index: 100;
   }
@@ -1803,11 +1802,11 @@ header#header .header-nav .mb-logo, header#header .header-nav .hambuger{
   }
 
   header#header .header-nav {
-    width: 375px;
+    width: 100%;
     padding: 16px 8px;
     display: flex;
     justify-content: center;
-    gap: 220px;
+    gap: 70%;
     max-height: 40px;
   }
 
