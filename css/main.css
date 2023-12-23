@@ -392,7 +392,7 @@ html, body {
   /* box-sizing: border-box; */
   font-family: var(--font-body);
   background-color: var(--Brand-Tertiary);
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
 }
 
 a {
@@ -1449,7 +1449,8 @@ footer#footer .footer-wrapper .main-content .logo-side .tel-email p{
 /* MEDIA QUERY */
 
 
-@media (max-width: 1200px){
+@media screen and (max-width: 1200px){
+  
   header#header {
     width: 100%;
     margin: 0 auto;
@@ -1756,6 +1757,10 @@ header#header .header-nav .mb-logo, header#header .header-nav .hambuger{
 
 
  @media screen and  (max-width: 600px) {
+
+  body {
+    overflow-x: hidden;
+  }
 
   body {
     max-width: 400px;
