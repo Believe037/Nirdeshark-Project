@@ -1439,7 +1439,24 @@ footer#footer .footer-wrapper .main-content .logo-side .tel-email p{
 }
 
 .dropdown {
+
+  background: var(--Brand-Primary);
+  padding: 18px 24px;
+  color: var(--Base-White);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  border-radius: 5px;
+  position: absolute;
+  right: 0;
+  width: 63%;
+
   display: none;
+}
+
+.dropdown div:hover {
+  background: var(--Brand-Secondary);
+  
 }
 
 
@@ -1742,6 +1759,7 @@ footer#footer .copyright p {
 
 footer#footer hr {
   display: none;
+
 }
 }
 
@@ -1756,6 +1774,20 @@ header#header .header-nav .mb-logo, header#header .header-nav .hambuger{
 
 
  @media screen and  (max-width: 600px) {
+
+  .active {
+    display: block;
+  }
+
+  .dropdown {
+    top: 50px;
+    right: 105px;
+    z-index: 100;
+  }
+
+  div.item {
+    padding: 10px;
+  }
 
   body {
     overflow-x: hidden;

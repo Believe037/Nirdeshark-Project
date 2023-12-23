@@ -1,4 +1,5 @@
 const menuUI = document.querySelector(".hambuger");
+console.log(menuUI);
 
 const dropDown = document.querySelector(".dropdown");
 
