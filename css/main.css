@@ -1605,14 +1605,17 @@ section#geodata .wrapper {
 
 section#geodata .wrapper .right-div .text-body h2 {
   font-size: 28px;
+  max-width: 327px;
 }
 
 section#geodata .wrapper .right-div .text-body p {
   font-size: 14px;
+  max-width: 327px;
 }
 
 section#geodata .wrapper .right-div .data-nums .side h1{
   font-size: 36px;
+  max-width: 327px;
 }
 
 section#geodata .wrapper .right-div .data-nums .side p {
@@ -1793,7 +1796,7 @@ header#header .header-nav .mb-logo, header#header .header-nav .hambuger{
 
   section#hero .hero-content .hero-right .hero-text-section .hero-text h1 {
     font-size: 56px;
-    width: 327px;
+    max-width: 327px;
   }
 
   section#hero .hero-content {
@@ -1802,11 +1805,11 @@ header#header .header-nav .mb-logo, header#header .header-nav .hambuger{
   }
 
   section#hero .hero-content .hero-right .hero-text-section .hero-text h3 {
-    width: 327px;
+    max-width: 327px;
   }
 
   section#hero .hero-content .hero-right .hero-text-section .hero-text p {
-    width: 327px;
+    max-width: 327px;
   }
 
   section#hero .hero-content .hero-slide {
@@ -1826,11 +1829,11 @@ header#header .header-nav .mb-logo, header#header .header-nav .hambuger{
 
   section#about-us .about-content h2 {
     font-size: 28px;
-    width: 327px;
+    max-width: 327px;
   }
 
   section#about-us .about-content p {
-    width: 327px;
+    max-width: 327px;
   }
 
 
@@ -1850,7 +1853,7 @@ header#header .header-nav .mb-logo, header#header .header-nav .hambuger{
 
   section#our-services {
     padding-top: 48px;
-    width: 327px;
+    max-width: 327px;
     flex-direction: column;
     position: static;
     padding-left: 24px;
@@ -1873,7 +1876,7 @@ header#header .header-nav .mb-logo, header#header .header-nav .hambuger{
 
   section#our-services .service-heading p {
     font-size: 14px;
-    width: 327px;
+    max-width: 327px;
   }
 
   section#our-services .service-card-flex .service-card#disappear {
@@ -1883,6 +1886,116 @@ header#header .header-nav .mb-logo, header#header .header-nav .hambuger{
   /* key industry */
 
   section#key-industry {
-    padding-top: 24px;
+    padding: 24px;
+    flex-direction: column;
+  }
+
+  section#key-industry .card-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  section#key-industry h2 {
+    margin-bottom: 40px;
+    padding-top: 40px;
+  }
+
+  /* expertise */
+
+  section#expertise {
+    padding: 24px;
+    padding-top: 56px;
+  }
+
+  section#expertise .scroll-container .cards img {
+    width: unset;
+  }
+
+  section#expertise .scroll-container .cards {
+    margin: 0;
+  }
+
+  section#expertise .scroll-container .cards .info p {
+    font-size: 20px;
+  }
+
+  section#expertise .scroll-container .cards .location p {
+    font-size: 14px;
+    margin-left: 8px;
+  }
+
+  /* geodata */
+
+  section#geodata {
+    display: block;
+  }
+
+  section#geodata .right-div,  section#geodata .left-div{
+    margin: 0;
+    padding: 24px;
+  }
+
+  section#geodata .left-div .card-wrapper {
+    padding: 24px 0;
+    
+  }
+
+  section#geodata .left-div .card-wrapper .text p {
+    max-width: 327px;
+  }
+
+  section#geodata button {
+    margin-left: 24px;
+    width: 100%;
+  }
+
+  /* INSIGHTS */
+
+  section#insights {
+    max-width: 374px;
+    padding-left: 24px;
+    background: var(--Base-White);
+    padding: 0;
+    padding-bottom: 56px;
+    width: 375px;
+  }
+
+  section#insights .left-section .top .text-heading h2{
+    max-width: 327px;
+  }
+  section#insights .left-section, section#insights .right-section {
+    width: 300px;
+    max-width: 327px;
+    
+  }
+
+  section#insights .left-section .top {
+    width: 300px;
+    background: var(--Base-White);
+    text-align: center;
+    padding: 32px;
+    justify-content: center;
+    height: auto;
+  }
+
+ 
+
+  section#insights .left-section .top .img-div{
+    display: none;
+    
+  }
+
+  section#insights .left-section .bottom {
+    width: 311px;
+    max-width: 375px;
+  }
+
+  section#insights .right-section .img-div{
+    width: 375px;
+    max-width: 375px;
+  }
+
+  section#insights .right-section .img-div img {
+    width: 100%;
   }
 }
