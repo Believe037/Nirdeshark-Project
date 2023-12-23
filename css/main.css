@@ -1772,11 +1772,11 @@ header#header .header-nav .mb-logo, header#header .header-nav .hambuger{
 
   header#header .header-nav {
     width: 375px;
-    padding: 8px;
+    padding: 16px 8px;
     display: flex;
     justify-content: center;
     gap: 220px;
-
+    max-height: 40px;
   }
 
   header#header .header-nav .nav-bar, header#header .header-nav .logo-div {
