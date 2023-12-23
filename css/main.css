@@ -1750,6 +1750,7 @@ footer#footer .footer-wrapper .main-content .info-side {
 footer#footer .footer-wrapper .main-content .info-side {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  padding-left: 10px;
 }
 
 footer#footer .copyright p {
@@ -1793,6 +1794,13 @@ header#header .header-nav .mb-logo, header#header .header-nav .hambuger{
     width: 100%;
   }
 
+  /* INTERACTIVITY */
+
+  section#about-us .about-content button:active {
+    color: var(--Base-White, #FFF);
+    background: var(--Brand-Primary, #1E5DBC)
+  }
+
  
 
   header#header {
@@ -1834,6 +1842,10 @@ header#header .header-nav .mb-logo, header#header .header-nav .hambuger{
   section#hero .hero-content .hero-right .hero-text-section .hero-text h1 {
     font-size: 56px;
     max-width: 327px;
+  }
+
+  section#hero .hero-content .design-pattern {
+    display: none;
   }
 
   section#hero .hero-content {
@@ -2058,6 +2070,7 @@ header#header .header-nav .mb-logo, header#header .header-nav .hambuger{
   footer#footer .footer-wrapper .main-content, footer#footer .footer-wrapper .main-content .logo-side{
     align-items: flex-start;
     gap: 24px;
+    padding-left: 10px;
   }
 
   footer#footer .floating-div{
