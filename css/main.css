@@ -516,21 +516,22 @@ section#hero .hero-content .design-pattern {
 }
 
 section#hero .hero-content .hero-slide {
+  display: flex;
+  justify-content: flex-start;
   position: absolute;
   right: 0;
   top: 0;
-  width: 26.9rem;
+  width: 35.2rem;
+  overflow-x: scroll;
 }
 
 section#hero .hero-content .hero-slide img {
   width: 100%;
+ 
   
 }
 
 
-.hero-slide {
-  display: flex;
-}
 
 /* about us */
 
@@ -862,10 +863,19 @@ section#our-services .service-heading {
 
     .arrows {
     display: inline-flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     gap: 16px;
-    margin-right: 16px;
+    margin: 0 16px;
+    
+    
+  }
+
+  .arrows > p {
+    color: var(--Brand-Primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
     .arrows .right,  .arrows .left {
@@ -876,16 +886,22 @@ section#our-services .service-heading {
     padding: 16px;
     background: var(--Brand-Primary, #1E5DBC);
     cursor: pointer;
-  }
+    color: var(--Base-White);
 
+    transition: all .5s ease-in-out;
+  }
   .arrows .left {
-    background: var(--Base-White);
+    background: var(--Brand-Tertiary);
     cursor: pointer;
+    color: var(--Brand-Primary);
+    
   }
 
-  .arrows .right svg {
+ 
+
+  /* .arrows .right i {
     width: 24px;
-  }
+  } */
 
 
 section#expertise .scroll-container {
@@ -898,9 +914,7 @@ section#expertise .scroll-container {
   scroll-behavior:initial;
 }
 
-.scrollRight {
-  margin-top: 500px;
-}
+
 
 @keyframes moveRight {
   0% {
@@ -913,8 +927,12 @@ section#expertise .scroll-container {
   
 }
 
+.image-fade {
+  animation: imgFade 0.5s ease-in-out;
+}
+
 .scrollRight {
-  animation: moveRight 5s linear ;
+  animation: moveRight 6000ms linear infinite;
 }
 
 section#expertise .scroll-container::-webkit-scrollbar {
@@ -1042,6 +1060,7 @@ section#geodata {
   flex-shrink: 0;
   align-items: center;
   flex-direction: column;
+  padding-bottom: 150px;
 }
 
 section#geodata .wrapper {
@@ -1182,7 +1201,8 @@ section#geodata button {
   letter-spacing: 0.32px;
   margin-bottom: 30px;
   cursor: pointer;
-  align-self: center;
+  align-self:self-end;
+  margin-right: 170px;
 }
 
 /* INSIGHTS SECTION */
@@ -1275,6 +1295,21 @@ justify-content: flex-end;
 gap: 32px;
 }
 
+.hidden {
+  display: none;
+}
+
+.reveal {
+  display: block;
+}
+
+section#insights .right-section .img-div {
+  display: flex;
+  width: 500px;
+  overflow-x: scroll;
+ 
+
+}
 section#insights .right-section .img-div img {
   width: 500px;
 }
