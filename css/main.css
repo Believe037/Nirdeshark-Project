@@ -522,9 +522,12 @@ section#hero .hero-content .hero-slide {
 section#hero .hero-content .hero-slide img {
   width: 100%;
   
-  
 }
 
+
+.hero-slide {
+  display: flex;
+}
 
 /* about us */
 
@@ -822,7 +825,7 @@ section#our-services .service-heading {
 
   section#expertise {
     flex-shrink: 0;
-    background: var(--Brand-Tertiary, #F5F9FE);
+    background: var(--Base-White, #F5F9FE);
     display: flex;
     flex-direction: column;
     display: flex;
@@ -884,7 +887,14 @@ section#our-services .service-heading {
 
 section#expertise .scroll-container {
   display: inline-flex;
+  flex-shrink: 0;
   gap: 24px;
+  overflow-x: auto;
+  width: 100%;
+}
+
+section#expertise .scroll-container::-webkit-scrollbar {
+  display: none;
 }
 
 section#expertise .scroll-container .cards {
@@ -892,6 +902,7 @@ section#expertise .scroll-container .cards {
   position: relative;
   margin-bottom: 69px;
   margin-top: 69px;
+  flex-shrink: 0;
   /* width: 100%; */
 }
 
@@ -920,6 +931,7 @@ font-size: 20px;
 font-style: normal;
 font-weight: 500;
 line-height: 120%; /* 24px */
+width: 232px;
 }
 
 section#expertise .scroll-container .cards .location {
@@ -940,7 +952,7 @@ section#expertise .scroll-container .cards .location p {
   line-height: 160%; /* 28.8px */
   width: 177px;
   flex-shrink: 0;
-  
+  padding-left: 8px;
 }
 
 section#expertise .scroll-container .cards .location  svg {
@@ -1750,7 +1762,7 @@ footer#footer .footer-wrapper .main-content .info-side {
 footer#footer .footer-wrapper .main-content .info-side {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  padding-left: 10px;
+  padding-leftt: 10px;
 }
 
 footer#footer .copyright p {
@@ -1902,7 +1914,6 @@ header#header .header-nav .mb-logo, header#header .header-nav .hambuger{
 
   section#our-services {
     padding-top: 48px;
-    max-width: 327px;
     flex-direction: column;
     position: static;
     padding-left: 24px;
@@ -1922,11 +1933,29 @@ header#header .header-nav .mb-logo, header#header .header-nav .hambuger{
     flex-wrap: nowrap;
     justify-content: left;
     padding: 0;
+    overflow-x: auto;
+    width: 100%;
+    
+  }
+
+
+
+  section#our-services .service-card-flex::-webkit-scrollbar {
+    display: none;
   }
 
   section#our-services .service-heading p {
     font-size: 14px;
     max-width: 327px;
+    margin-bottom: 24px;
+  }
+
+  section#our-services .service-card-flex .service-card:nth-child(8),  section#our-services .service-card-flex .service-card:nth-child(7),  section#our-services .service-card-flex .service-card.mobile-bg#card-bg{
+    background: var(--Base-White);
+  }
+
+  section#our-services .service-card-flex .service-card:nth-child(9),  section#our-services .service-card-flex .service-card:nth-child(11){
+    background: transparent;
   }
 
   section#our-services .service-card-flex .service-card#disappear {
@@ -1955,8 +1984,19 @@ header#header .header-nav .mb-logo, header#header .header-nav .hambuger{
   /* expertise */
 
   section#expertise {
-    padding: 24px;
     padding-top: 56px;
+    padding-left: 24px;
+    align-self: center;
+  }
+
+  section#expertise .scroll-container {
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: auto;
+  }
+
+  section#expertise .scroll-container::-webkit-scrollbar {
+    display: none;
   }
 
   section#expertise .scroll-container .cards img {
@@ -1974,6 +2014,11 @@ header#header .header-nav .mb-logo, header#header .header-nav .hambuger{
   section#expertise .scroll-container .cards .location p {
     font-size: 14px;
     margin-left: 8px;
+  }
+
+  section#expertise .title-arrow p {
+    width: 300px;
+    text-align: center;
   }
 
   /* geodata */
