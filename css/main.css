@@ -889,8 +889,23 @@ section#expertise .scroll-container {
   display: inline-flex;
   flex-shrink: 0;
   gap: 24px;
-  overflow-x: auto;
+  overflow-x: scroll;
   width: 100%;
+  scroll-behavior:initial;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.scrollBtnActive {
+animation: fade linear;
+animation-timeline: scroll();
 }
 
 section#expertise .scroll-container::-webkit-scrollbar {

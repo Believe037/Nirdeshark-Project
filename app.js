@@ -1,10 +1,26 @@
 const menuUI = document.querySelector(".hambuger");
-console.log(menuUI);
 
 const dropDown = document.querySelector(".dropdown");
 
-console.log(dropDown)
 menuUI.addEventListener('click', function(){
-  console.log('click')
   dropDown.classList.toggle('active')
-})
+});
+
+
+// SCROLL BUTTONS
+
+const expertiseScrollUI = document.querySelector(".scroll-container");
+const scrollLeft = document.querySelector(".scrollBtnLeft");
+const scrollRight = document.querySelector(".scrollBtnRight");
+console.log(scrollLeft);
+
+scrollLeft.addEventListener('mousedown', function(){
+ 
+  expertiseScrollUI .scrollLeft -= 20;
+});
+
+scrollRight.addEventListener('mousedown', function(){
+  console.log('click')
+  expertiseScrollUI.classList.add('scrollBtnActive')
+  expertiseScrollUI .scrollLeft += 20;
+});
