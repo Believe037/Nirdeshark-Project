@@ -12,14 +12,22 @@ menuUI.addEventListener('click', function(){
 const expertiseScrollUI = document.querySelector(".scroll-container");
 const scrollLeft = document.querySelector(".scrollBtnLeft");
 const scrollRight = document.querySelector(".scrollBtnRight");
-console.log(scrollLeft);
+const scrollItemUI =document.querySelectorAll(".cards");
 
-scrollLeft.addEventListener('mousedown', function(){
- 
-  expertiseScrollUI .scrollLeft -= 20;
-});
+for(let i = 0; i < scrollItemUI.length; i++){
+  console.log(scrollItemUI[i])
+  
+  scrollLeft.addEventListener('mousedown', function(){
+    expertiseScrollUI.scrollLeft -= 40;
+  });
+  
+  
+  
+  scrollRight.addEventListener('click', function(){
+    console.log('click')
+    // scrollItemUI[i].classList.add('scrollRight')
+    expertiseScrollUI.scrollLeft += 40;
+  });
+}
 
-scrollRight.addEventListener('mousedown', function(){
-  console.log('click')
-  expertiseScrollUI .scrollLeft += 20;
-});
+

@@ -348,6 +348,9 @@ template {
 }
 
 
+@import 'https://unpkg.com/open-props';
+@import 'https://unpkg.com/open-props/normalize.min.css';
+
 
 :root {
   --main-color: #9C231C!important;
@@ -889,12 +892,30 @@ section#expertise .scroll-container {
   display: inline-flex;
   flex-shrink: 0;
   gap: 24px;
+  padding-right: 1rem;
   overflow-x: scroll;
   width: 100%;
   scroll-behavior:initial;
 }
 
+.scrollRight {
+  margin-top: 500px;
+}
 
+@keyframes moveRight {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-100%)
+  }
+  
+}
+
+.scrollRight {
+  animation: moveRight 5s linear ;
+}
 
 section#expertise .scroll-container::-webkit-scrollbar {
   display: none;
@@ -906,7 +927,7 @@ section#expertise .scroll-container .cards {
   margin-bottom: 69px;
   margin-top: 69px;
   flex-shrink: 0;
-  /* width: 100%; */
+  
 }
 
 section#expertise .scroll-container .cards img {
@@ -1996,6 +2017,14 @@ header#header .header-nav .mb-logo, header#header .header-nav .hambuger{
     width: 100%;
     overflow-x: auto;
     overflow-y: auto;
+  }
+
+  .snaps-inline {
+    scroll-snap-type: inline mandatory;
+  }
+
+  .snaps-inline > * {
+    scroll-snap-align: start;
   }
 
   section#expertise .scroll-container::-webkit-scrollbar {
