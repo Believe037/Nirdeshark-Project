@@ -75,10 +75,7 @@ function slide(id){
 
 insightLeftUI.addEventListener('click', () => {
   id--;
-  imgIndexIncrease--;
-  if(imgIndexIncrease < 0){
-     increaseNumUI.textContent = imgSrc.length;
-  }
+  
 
   
   if(id<0){
@@ -93,7 +90,6 @@ insightLeftUI.addEventListener('click', () => {
 insightRightUI.addEventListener('click', () => {
   console.log('clicked')
   id++;
-  increaseNumUI.textContent = id++;
 
 
   if(id>imgSrc.length - 1){
