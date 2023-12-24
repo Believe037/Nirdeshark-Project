@@ -21,6 +21,5 @@ scrollLeft.addEventListener('mousedown', function(){
 
 scrollRight.addEventListener('mousedown', function(){
   console.log('click')
-  expertiseScrollUI.classList.add('scrollBtnActive')
   expertiseScrollUI .scrollLeft += 20;
 });
